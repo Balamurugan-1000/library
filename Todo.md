@@ -15,15 +15,18 @@ Each feature should be developed via a dedicated PR
 
 ---
 
-## 📚 Feature: Book Listing (Read-only)
+## 📚 Feature: Book Listing with Search & Filters
 
-**Goal:** allow users to view library inventory
+**Goal:** allow users to view and discover books
 
 - [ ] Add available copies calculation to `Book` model
 - [ ] Create authenticated book list view
-- [ ] Create book list template
+- [ ] Create book list template with search bar
 - [ ] Display title, author, total copies, available copies
-- [ ] Ensure listing is read-only (no actions yet)
+- [ ] Add search functionality (title/author search)
+- [ ] Add filters (availability, genre)
+- [ ] Implement Django Q objects for complex queries
+- [ ] Add pagination for large book lists
 
 ---
 
@@ -94,28 +97,69 @@ Each feature should be developed via a dedicated PR
 
 ---
 
-## 🔌 Feature: API Layer (Later)
+## 🖼️ Feature: Book Management & Files
 
-**Goal:** support CLI and future clients
+**Goal:** handle book covers and bulk operations
 
-- [ ] Authenticated rent request API
-- [ ] Librarian approval APIs
-- [ ] Return flow APIs
-- [ ] Token-based auth for CLI usage
+- [ ] Add cover image upload to Book model
+- [ ] Configure media files handling
+- [ ] Create book creation/editing forms
+- [ ] Implement CSV import for bulk books
+- [ ] Add book cover display in listings
+- [ ] Handle image validation and resizing
 
 ---
 
-## 🧪 Feature: Polish & Safety (Optional)
+## 📧 Feature: Email Notifications System
 
-- [ ] Manual end-to-end testing
-- [ ] Add basic unit tests for rules
-- [ ] Improve admin UX
-- [ ] Update README with usage instructions
+**Goal:** automated communication with users
+
+- [ ] Configure Django email backend
+- [ ] Create email templates for borrowing status
+- [ ] Implement email sending on status changes
+- [ ] Add email preferences to user profile
+- [ ] Test email delivery (development + production)
+
+---
+
+## 🔌 Feature: REST API Layer
+
+**Goal:** support mobile/cli integration
+
+- [ ] Install Django REST Framework
+- [ ] Create API serializers for Book/Borrowing
+- [ ] Implement token authentication
+- [ ] Build endpoints for rent/return flows
+- [ ] Add API documentation (Swagger)
+
+---
+
+## ⚡ Feature: Background Tasks & Analytics
+
+**Goal:** automation and insights
+
+- [ ] Set up Celery with Redis
+- [ ] Create overdue book checking task
+- [ ] Implement borrowing analytics
+- [ ] Build dashboard for trends
+- [ ] Add penalty calculation system
+- [ ] Schedule regular maintenance tasks
+
+---
+
+## 🧪 Feature: Testing & Production Ready
+
+- [ ] Write unit tests for core business logic
+- [ ] Add integration tests for API endpoints
+- [ ] Set up test database and fixtures
+- [ ] Configure CI/CD pipeline
+- [ ] Add environment-specific settings
+- [ ] Implement logging and monitoring
+- [ ] Write comprehensive README
 
 ---
 
 ## 📌 Rules
 - One feature = one PR
 - No vague commits
-- No API before core logic is stable
 - Update this file in every PR

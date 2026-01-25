@@ -1,6 +1,14 @@
-### The Plan
-- There is a list of books in the library
-- The books can be rented by normal users with user account 
-- Librarian has to approve a book which rented if rejected the book will not be used by the user
-- The user can return and the Librarian has to approve the book has returnned
-- The number of books is limited so the book can be rented only in the certain limit at the time
+### The Plan - Enhanced Learning Edition
+- There is a list of books in the library with rich metadata
+- Users can browse, search, and filter books using advanced queries
+- Books can be rented by users with librarian approval workflow
+- Users can return books with librarian approval system
+- Book quantities are limited with availability tracking
+- **NEW:** Book covers upload and image management
+- **NEW:** Email notifications for borrowing status changes
+- **NEW:** Search with filters (author, genre, availability)
+- **NEW:** Import books from CSV files
+- **NEW:** Overdue book tracking and penalty system
+- **NEW:** REST API for mobile/cli integration
+- **NEW:** Background tasks for maintenance and reports
+- **NEW:** Analytics dashboard with borrowing trends
