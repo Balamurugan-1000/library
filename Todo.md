@@ -11,19 +11,7 @@ Each feature should be developed via a dedicated PR
 - [x] Define base models (User, Book, Borrowing)
 - [x] Admin registration and migrations
 - [x] Migrate DB from sqlite to postgres
-
----
-
-## 🔐 Feature: Authentication (Login / Logout)
-
-**Goal:** establish user identity for all future flows
-
-- [ ] Add Django auth URLs (login, logout)
-- [ ] Create login template
-- [ ] Configure login redirect after success
-- [ ] Configure logout redirect
-- [ ] Protect authenticated views using `login_required`
-- [ ] Verify unauthenticated users are redirected to login
+- [x] Feature: Authentication (Login / Logout)
 
 ---
 
