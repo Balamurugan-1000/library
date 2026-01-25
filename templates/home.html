@@ -10,7 +10,7 @@
             You are logged in buddy and this can only be accessed by logged in
             users
         </h1>
-        <form method="post" action="/accounts/logout/">
+        <form method="post" action="{% url 'logout' %}">
             {% csrf_token %}
             <button type="submit">Logout</button>
         </form>
